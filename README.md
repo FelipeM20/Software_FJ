@@ -117,24 +117,17 @@ Cubren las 10 obligatorias (marcadas "Obligatoria N" en su nombre) y 11 adiciona
 RESUMEN: 21/21 simulaciones APROBADAS
 ```
 
-## \## Autor
+## Autor
 
-## Proyecto desarrollado de forma individual por:
+Proyecto desarrollado de forma individual por:
 
-## 
+| Nombre | Usuario GitHub | Responsabilidad |
+|---|---|---|
+| Juan Felipe Mahecha Leal | FelipeM20 | Diseño, desarrollo, pruebas y documentación completos |
 
-## | Nombre | Usuario GitHub | Responsabilidad |
+## Repositorio
 
-## |---|---|---|
-
-## | Juan Felipe Mahecha Leal | FelipeM20 | Diseño, desarrollo, pruebas y documentación completos |
-
-## 
-
-## \## Repositorio
-
-## https://github.com/FelipeM20/Software\_FJ
-
+https://github.com/FelipeM20/Software_FJ
 
 ## Ejecución en Windows y pruebas
 Verificado en Windows 10/11 con Python 3.15. Si el comando `python` no responde, use la ruta completa del intérprete o `py`.

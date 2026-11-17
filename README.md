@@ -139,10 +139,16 @@ RESUMEN: 21/21 simulaciones APROBADAS
 ## Ejecución en Windows y pruebas
 Verificado en Windows 10/11 con Python 3.15. Si el comando `python` no responde, use la ruta completa del intérprete o `py`.
 
-Ejecutar el programa (21 simulaciones, resultado esperado: 21/21 APROBADAS):
+Ejecutar el programa (resultado esperado: 21/21 simulaciones APROBADAS):
+
+```
 python main.py
+```
 
 Ejecutar las pruebas unitarias (resultado esperado: Ran 37 tests ... OK):
-python -m unittest discover -s tests -v
 
-El archivo de registro se genera automáticamente en logs/sistema.log.
+```
+python -m unittest discover -s tests -v
+```
+
+El archivo de registro se genera automáticamente en `logs/sistema.log`.

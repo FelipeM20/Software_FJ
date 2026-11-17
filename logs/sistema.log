@@ -1,0 +1,119 @@
+2026-11-17 04:43:14 | INFO     | software_fj | Inicio del programa Software FJ
+2026-11-17 04:43:14 | INFO     | software_fj.sistema | Cliente registrado: CLI-001
+2026-11-17 04:43:14 | DEBUG    | software_fj.sistema | Fin del intento de registro de cliente (CLI-001)
+2026-11-17 04:43:14 | WARNING  | software_fj.sistema | Registro de cliente rechazado por validación: El correo electrónico no tiene un formato válido.
+2026-11-17 04:43:14 | DEBUG    | software_fj.sistema | Fin del intento de registro de cliente (CLI-002)
+2026-11-17 04:43:14 | INFO     | software_fj.sistema | Operación '<lambda>' rechazada de forma controlada (ErrorCliente)
+2026-11-17 04:43:14 | WARNING  | software_fj.sistema | Registro de cliente rechazado por validación: El campo 'documento' es obligatorio.
+2026-11-17 04:43:14 | DEBUG    | software_fj.sistema | Fin del intento de registro de cliente (CLI-002)
+2026-11-17 04:43:14 | INFO     | software_fj.sistema | Operación '<lambda>' rechazada de forma controlada (ErrorCliente)
+2026-11-17 04:43:14 | WARNING  | software_fj.sistema | Registro de cliente rechazado: Ya existe un cliente con ese documento.
+2026-11-17 04:43:14 | DEBUG    | software_fj.sistema | Fin del intento de registro de cliente (CLI-002)
+2026-11-17 04:43:14 | INFO     | software_fj.sistema | Operación '<lambda>' rechazada de forma controlada (ErrorCliente)
+2026-11-17 04:43:14 | INFO     | software_fj.sistema | Servicio creado: SRV-001 (ReservaSala)
+2026-11-17 04:43:14 | DEBUG    | software_fj.sistema | Fin del intento de creación de servicio (SRV-001)
+2026-11-17 04:43:14 | INFO     | software_fj.sistema | Reserva creada: RES-001 (cliente CLI-001, servicio SRV-001)
+2026-11-17 04:43:14 | DEBUG    | software_fj.sistema | Fin del intento de creación de reserva (RES-001)
+2026-11-17 04:43:14 | WARNING  | software_fj.sistema | Creación de servicio rechazada por validación: El campo 'tipo de sala' debe ser uno de: auditorio, capacitacion, reuniones.
+2026-11-17 04:43:14 | DEBUG    | software_fj.sistema | Fin del intento de creación de servicio (SRV-002)
+2026-11-17 04:43:14 | INFO     | software_fj.sistema | Operación '<lambda>' rechazada de forma controlada (ErrorServicio)
+2026-11-17 04:43:14 | INFO     | software_fj.sistema | Servicio creado: SRV-002 (AlquilerEquipo)
+2026-11-17 04:43:14 | DEBUG    | software_fj.sistema | Fin del intento de creación de servicio (SRV-002)
+2026-11-17 04:43:14 | INFO     | software_fj.sistema | Servicio creado: SRV-003 (AsesoriaEspecializada)
+2026-11-17 04:43:14 | DEBUG    | software_fj.sistema | Fin del intento de creación de servicio (SRV-003)
+2026-11-17 04:43:14 | INFO     | software_fj.sistema | Reserva creada: RES-002 (cliente CLI-001, servicio SRV-002)
+2026-11-17 04:43:14 | DEBUG    | software_fj.sistema | Fin del intento de creación de reserva (RES-002)
+2026-11-17 04:43:14 | INFO     | software_fj.reservas | Reserva RES-002: pendiente -> confirmada
+2026-11-17 04:43:14 | DEBUG    | software_fj.reservas | Fin de procesar(confirmar) sobre RES-002
+2026-11-17 04:43:14 | INFO     | software_fj.sistema | Servicio creado: SRV-004 (AlquilerEquipo)
+2026-11-17 04:43:14 | DEBUG    | software_fj.sistema | Fin del intento de creación de servicio (SRV-004)
+2026-11-17 04:43:14 | WARNING  | software_fj.sistema | Creación de reserva rechazada (ServicioNoDisponible): El servicio SRV-004 no está disponible.
+2026-11-17 04:43:14 | DEBUG    | software_fj.sistema | Fin del intento de creación de reserva (RES-003)
+2026-11-17 04:43:14 | INFO     | software_fj.sistema | Operación '<lambda>' rechazada de forma controlada (ServicioNoDisponible)
+2026-11-17 04:43:14 | WARNING  | software_fj.sistema | Reserva inexistente consultada: RES-999
+2026-11-17 04:43:14 | INFO     | software_fj.sistema | Operación '<lambda>' rechazada de forma controlada (ReservaNoEncontrada)
+2026-11-17 04:43:14 | INFO     | software_fj.reservas | Reserva RES-001: pendiente -> cancelada
+2026-11-17 04:43:14 | DEBUG    | software_fj.reservas | Fin de procesar(cancelar) sobre RES-001
+2026-11-17 04:43:14 | WARNING  | software_fj.reservas | Transición rechazada en RES-001: cancelada -> confirmar
+2026-11-17 04:43:14 | DEBUG    | software_fj.reservas | Fin de procesar(confirmar) sobre RES-001
+2026-11-17 04:43:14 | WARNING  | software_fj.sistema | No se pudo confirmar la reserva RES-001: No se puede confirmar una reserva cancelada.
+2026-11-17 04:43:14 | INFO     | software_fj.sistema | Operación '<lambda>' rechazada de forma controlada (OperacionNoPermitida)
+2026-11-17 04:43:14 | INFO     | software_fj.sistema | Reserva creada: RES-003 (cliente CLI-001, servicio SRV-001)
+2026-11-17 04:43:14 | DEBUG    | software_fj.sistema | Fin del intento de creación de reserva (RES-003)
+2026-11-17 04:43:14 | WARNING  | software_fj.sistema | Creación de reserva rechazada (ServicioNoDisponible): El servicio SRV-001 ya está reservado el 2026-11-26.
+2026-11-17 04:43:14 | DEBUG    | software_fj.sistema | Fin del intento de creación de reserva (RES-004)
+2026-11-17 04:43:14 | INFO     | software_fj.sistema | Operación '<lambda>' rechazada de forma controlada (ServicioNoDisponible)
+2026-11-17 04:43:14 | WARNING  | software_fj.sistema | Creación de reserva rechazada por validación: La fecha de la reserva no puede estar en el pasado.
+2026-11-17 04:43:14 | DEBUG    | software_fj.sistema | Fin del intento de creación de reserva (RES-004)
+2026-11-17 04:43:14 | INFO     | software_fj.sistema | Operación '<lambda>' rechazada de forma controlada (ErrorReserva)
+2026-11-17 04:43:14 | ERROR    | software_fj.sistema | Error inesperado en la operación '_operacion_defectuosa'
+Traceback (most recent call last):
+  File "/home/claude/Software_FJ/sistema_gestion.py", line 208, in ejecutar_operacion
+    valor = operacion(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/Software_FJ/simulaciones.py", line 41, in _operacion_defectuosa
+    return 1 / 0
+           ~~^~~
+ZeroDivisionError: division by zero
+2026-11-17 04:43:14 | INFO     | software_fj.sistema | Reserva creada: RES-004 (cliente CLI-001, servicio SRV-003)
+2026-11-17 04:43:14 | DEBUG    | software_fj.sistema | Fin del intento de creación de reserva (RES-004)
+2026-11-17 04:43:14 | INFO     | software_fj | Finalización del programa (código de salida 0)
+2026-11-16 23:49:08 | INFO     | software_fj | Inicio del programa Software FJ
+2026-11-16 23:49:08 | INFO     | software_fj.sistema | Cliente registrado: CLI-001
+2026-11-16 23:49:08 | DEBUG    | software_fj.sistema | Fin del intento de registro de cliente (CLI-001)
+2026-11-16 23:49:08 | WARNING  | software_fj.sistema | Registro de cliente rechazado por validación: El correo electrónico no tiene un formato válido.
+2026-11-16 23:49:08 | DEBUG    | software_fj.sistema | Fin del intento de registro de cliente (CLI-002)
+2026-11-16 23:49:08 | INFO     | software_fj.sistema | Operación '<lambda>' rechazada de forma controlada (ErrorCliente)
+2026-11-16 23:49:08 | WARNING  | software_fj.sistema | Registro de cliente rechazado por validación: El campo 'documento' es obligatorio.
+2026-11-16 23:49:08 | DEBUG    | software_fj.sistema | Fin del intento de registro de cliente (CLI-002)
+2026-11-16 23:49:08 | INFO     | software_fj.sistema | Operación '<lambda>' rechazada de forma controlada (ErrorCliente)
+2026-11-16 23:49:08 | WARNING  | software_fj.sistema | Registro de cliente rechazado: Ya existe un cliente con ese documento.
+2026-11-16 23:49:08 | DEBUG    | software_fj.sistema | Fin del intento de registro de cliente (CLI-002)
+2026-11-16 23:49:08 | INFO     | software_fj.sistema | Operación '<lambda>' rechazada de forma controlada (ErrorCliente)
+2026-11-16 23:49:08 | INFO     | software_fj.sistema | Servicio creado: SRV-001 (ReservaSala)
+2026-11-16 23:49:08 | DEBUG    | software_fj.sistema | Fin del intento de creación de servicio (SRV-001)
+2026-11-16 23:49:08 | INFO     | software_fj.sistema | Reserva creada: RES-001 (cliente CLI-001, servicio SRV-001)
+2026-11-16 23:49:08 | DEBUG    | software_fj.sistema | Fin del intento de creación de reserva (RES-001)
+2026-11-16 23:49:08 | WARNING  | software_fj.sistema | Creación de servicio rechazada por validación: El campo 'tipo de sala' debe ser uno de: auditorio, capacitacion, reuniones.
+2026-11-16 23:49:08 | DEBUG    | software_fj.sistema | Fin del intento de creación de servicio (SRV-002)
+2026-11-16 23:49:08 | INFO     | software_fj.sistema | Operación '<lambda>' rechazada de forma controlada (ErrorServicio)
+2026-11-16 23:49:08 | INFO     | software_fj.sistema | Servicio creado: SRV-002 (AlquilerEquipo)
+2026-11-16 23:49:08 | DEBUG    | software_fj.sistema | Fin del intento de creación de servicio (SRV-002)
+2026-11-16 23:49:08 | INFO     | software_fj.sistema | Servicio creado: SRV-003 (AsesoriaEspecializada)
+2026-11-16 23:49:08 | DEBUG    | software_fj.sistema | Fin del intento de creación de servicio (SRV-003)
+2026-11-16 23:49:08 | INFO     | software_fj.sistema | Reserva creada: RES-002 (cliente CLI-001, servicio SRV-002)
+2026-11-16 23:49:08 | DEBUG    | software_fj.sistema | Fin del intento de creación de reserva (RES-002)
+2026-11-16 23:49:08 | INFO     | software_fj.reservas | Reserva RES-002: pendiente -> confirmada
+2026-11-16 23:49:08 | DEBUG    | software_fj.reservas | Fin de procesar(confirmar) sobre RES-002
+2026-11-16 23:49:08 | INFO     | software_fj.sistema | Servicio creado: SRV-004 (AlquilerEquipo)
+2026-11-16 23:49:08 | DEBUG    | software_fj.sistema | Fin del intento de creación de servicio (SRV-004)
+2026-11-16 23:49:08 | WARNING  | software_fj.sistema | Creación de reserva rechazada (ServicioNoDisponible): El servicio SRV-004 no está disponible.
+2026-11-16 23:49:08 | DEBUG    | software_fj.sistema | Fin del intento de creación de reserva (RES-003)
+2026-11-16 23:49:08 | INFO     | software_fj.sistema | Operación '<lambda>' rechazada de forma controlada (ServicioNoDisponible)
+2026-11-16 23:49:08 | WARNING  | software_fj.sistema | Reserva inexistente consultada: RES-999
+2026-11-16 23:49:08 | INFO     | software_fj.sistema | Operación '<lambda>' rechazada de forma controlada (ReservaNoEncontrada)
+2026-11-16 23:49:08 | INFO     | software_fj.reservas | Reserva RES-001: pendiente -> cancelada
+2026-11-16 23:49:08 | DEBUG    | software_fj.reservas | Fin de procesar(cancelar) sobre RES-001
+2026-11-16 23:49:08 | WARNING  | software_fj.reservas | Transición rechazada en RES-001: cancelada -> confirmar
+2026-11-16 23:49:08 | DEBUG    | software_fj.reservas | Fin de procesar(confirmar) sobre RES-001
+2026-11-16 23:49:08 | WARNING  | software_fj.sistema | No se pudo confirmar la reserva RES-001: No se puede confirmar una reserva cancelada.
+2026-11-16 23:49:08 | INFO     | software_fj.sistema | Operación '<lambda>' rechazada de forma controlada (OperacionNoPermitida)
+2026-11-16 23:49:08 | INFO     | software_fj.sistema | Reserva creada: RES-003 (cliente CLI-001, servicio SRV-001)
+2026-11-16 23:49:08 | DEBUG    | software_fj.sistema | Fin del intento de creación de reserva (RES-003)
+2026-11-16 23:49:08 | WARNING  | software_fj.sistema | Creación de reserva rechazada (ServicioNoDisponible): El servicio SRV-001 ya está reservado el 2026-11-25.
+2026-11-16 23:49:08 | DEBUG    | software_fj.sistema | Fin del intento de creación de reserva (RES-004)
+2026-11-16 23:49:08 | INFO     | software_fj.sistema | Operación '<lambda>' rechazada de forma controlada (ServicioNoDisponible)
+2026-11-16 23:49:08 | WARNING  | software_fj.sistema | Creación de reserva rechazada por validación: La fecha de la reserva no puede estar en el pasado.
+2026-11-16 23:49:08 | DEBUG    | software_fj.sistema | Fin del intento de creación de reserva (RES-004)
+2026-11-16 23:49:08 | INFO     | software_fj.sistema | Operación '<lambda>' rechazada de forma controlada (ErrorReserva)
+2026-11-16 23:49:08 | ERROR    | software_fj.sistema | Error inesperado en la operación '_operacion_defectuosa'
+Traceback (most recent call last):
+  File "c:\Users\mahec\Downloads\Software_FJ\Software_FJ\sistema_gestion.py", line 208, in ejecutar_operacion
+    valor = operacion(*args, **kwargs)
+  File "c:\Users\mahec\Downloads\Software_FJ\Software_FJ\simulaciones.py", line 41, in _operacion_defectuosa
+    return 1 / 0
+           ~~^~~
+ZeroDivisionError: division by zero
+2026-11-16 23:49:08 | INFO     | software_fj.sistema | Reserva creada: RES-004 (cliente CLI-001, servicio SRV-003)
+2026-11-16 23:49:08 | DEBUG    | software_fj.sistema | Fin del intento de creación de reserva (RES-004)
+2026-11-16 23:49:08 | INFO     | software_fj | Finalización del programa (código de salida 0)
